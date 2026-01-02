@@ -1,0 +1,39 @@
+body {
+  background: #f4f6f8;
+  font-family: Arial, sans-serif;
+}
+
+.react-flow__node {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.graph-popup {
+  position: fixed;
+  bottom: 24px;          /* change to center if needed */
+  right: 24px;
+  z-index: 9999;
+
+  /* animation */
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
